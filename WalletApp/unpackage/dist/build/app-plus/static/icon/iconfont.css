@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "wallet-iconfont"; /* Project id 3493318 */
+  src: 
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAUsAAsAAAAACjgAAATfAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDMgqGcIV+ATYCJAMUCwwABCAFhTsHSxv3CKOijM+tyP6ZkMn1sBuiCUMMUzW4oxgONhqNdza4QqX93bZxsC2C+P1os0/O1CCKVTxBVa1kEiRiukiINNES/nzvWVMoydJZgse0O4WyL52D0zu3B7E9wF9we/AXgGag4mIMHIzL+mSIuvbqEUYjR4UGhawusC5UsC2kvAW8DQkXVOcR6LCnCPdSVUMHcH5KIT3wxyf0D+zyeKpSUEB8tSkxzNBmbEm7bhGfVdLH9BWf9LeP/w5CTFIzYSfX7lf2g7O//DnNbMOSv1H7CTh/QkXGVssc8Tre9xTPTGzh6Qj7O75zgA5tkvTLr8NfT16eNg1vVd8MHaKPVMo/XiFaCLouxJ5LFn6RPZIxlCOPzK8nHmEG5ahYO7pK63SgD4gVIN4DgbLkBVdJizyaXdrbd3bDnTxC0js8JBmnX7p5aDOqmOkk4LKncLfPcAQsep3zCHYx5txWDs823GWg7SR7ynzGeLrDtNS4zLyEXTyIZ7TiTu/IM9N2DGsxAOwSHM/r4Tn9jm0H3OWn3E2WcTiWmix0rCJxlMjCyayI1GGVI1boXWj6MTZb02lblb35jN1uEwimO1Xs3cKbnXc6rki65UlWGWm0281377J37phsthENjVgC7N0i09x5N3fFUIxdYl5W79qLg7xvdF1ussR57oi9Wombx0W62Y47xDB12bTGDM9AdWze7tuxeMWOLT7d26wB3ctWWrb2mK1Gi2k7u4Mk94X08C5jWAfhPi0lYKb/Lz9jAJjAs2Gu/pemgw+xK0tyEvuJB4kdIiHx09t5/xVftxQ4oU8H/sH7vfd/b4ed95udXIlzhKtTM+FGrMAduFBmHfEL8zNPH+DEIXaI0/yCcQchAFEft63LgrHHOK7BUkpzYS9q1nmzcewJdsovDRFiPch9LHC2hZBUlU8ctkiWrCxxd6mIGgZUq8PqaodFqyRzba2lVuPxKtzK3dQerdXDyidKqmKEftv9hDOUZaU0XTJVX6Kpp6IYLVNpczvKRKvrdtceV2JQZn1GbXNsW9xxEpPYEjuvlRjk+krkIpxBjCJGEzPDH1tKuaGRk7lv+BeVk0XVgOTFI2ne8Ozs4XnSlyxmMYu575f3b4qf3GvMfmxovJdf7YYOfBLr+d7vE8SHAaMBAIDj/VmeB+D4sIDnBjgOzuLVA+C4a+XF/yTn8+LL5aBhLgXfxPhmGPMk+vtTVz3aHCzSy35Sei/ZD1B/N2Wf5S0hfQlrLXuEt989v6xA4mdmajA04Ek5hsHUpYRegzYkrRYg67WOLNizUHW6Ci163YAOm6iNOw2aLYvSjhXrAMKMS5D0+A7ZjE+IQg0XqEYiUdMShi2HDneC2l6nlThykYEUgv2kdAypktF6udQEjaK0WogSneNrg4oRWooJaQtfqwsyBhWtJ1OTUkLT1VAPmeJXMIxUpCEkJ+UMrSOrYg4GtVqaHGBoNZShJCVCA3nJyfKwO0mS0TpQjgFREKgfSWoMkooMTU+u/jYyCkVLC0ISKbcNpDDiOhwKk64TVL8LxDBQvaeGlCpJSnpktU6fp80ezGQwkkIaBPHCJDkGTYdUlU8Hy0zQSAPhc6lBMkgSZY7YgDzJYl/ytLqk+g26TSH/g7Qr7LBGihwlarRofaWi9FKKFmn1GdUqyB9F90OhnBrttAIAAA==') format('woff2');
+}
+
+.wallet-iconfont {
+  font-family: "wallet-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wallet-icon-qianbao:before {
+  content: "\e66b";
+}
+
+.wallet-icon-lianjie:before {
+  content: "\e600";
+}
+
+.wallet-icon-wode:before {
+  content: "\e633";
+}
+
+.wallet-icon-faxian:before {
+  content: "\e8c4";
+}
+

@@ -1,0 +1,369 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//启动页
+		//#ifdef APP-PLUS
+		{
+			"path": "pages/Guide/Judge",
+			"style": {
+				"enablePullDownRefresh": false,
+				"onReachBottomDistance": 100,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"contentAdjust": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/Guide/Guide",
+			"style": {
+				"enablePullDownRefresh": false,
+				"onReachBottomDistance": 100,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"contentAdjust": false,
+					"bounce": "none"
+				}
+			}
+		},
+		// #endif
+		{
+			"path": "pages/TabBar/Assets",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/TabBar/CrossChain",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/TabBar/Find",
+			"style": {
+				"navigationBarBackgroundColor": "#11C4D1",
+				"navigationBarTitleText": " ",
+				"leftWindow": false
+			}
+		},
+		{
+			"path": "pages/TabBar/My",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/WalletList/index", //钱包列表
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/FlashCash/index", //闪兑
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/Deal/index", //支付详情
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"subPackages": [
+		// 創建錢包
+		{
+			"root": "pages/CreateWallet",
+			"pages": [{
+					"path": "WriteMnemonicsFirst", //備份助記詞1
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "WriteMnemonicsSecond", //備份助記詞1-3
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "ConfirmMnemonicsFirst", //確認助記詞2
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "ConfirmMnemonicsSecond", //確認助記詞2-3
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "WalletSet", //錢包設置
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "BackupTips", //备份钱包
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "CreatePassword", //创建密码
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "HaveWallet", //拥有钱包
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "NoHaveWallet", //没有钱包
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				}
+			]
+		},
+		// 資產
+		{
+			"root": "pages/Assets",
+			"pages": [{
+					"path": "TransactionFailure", //轉賬失敗
+					"style": {
+						// "navigationBarTitleText": "交易詳情"
+						"navigationStyle": "custom",
+						"app-plus": {
+							"bottom": "0",
+							"contentAdjust": "false",
+							"bounce": "none",
+							"safearea": {
+								"bottom": "none"
+							}
+						}
+					}
+				},
+				{
+					"path": "SuccessfulDeal", //轉賬成功
+					"style": {
+						"navigationBarTitleText": "交易詳情",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "Confirmation", //確認中
+					"style": {
+						"navigationBarTitleText": "交易詳情",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "Capital", //資產
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "CapitalFirst", //資產-1
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "CapitalSecond", //資產-2
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "CapitalFourth", //資產-3
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "CapitalOther", //資產-其它币种
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "Transfer", //转账
+					"style": {
+						"navigationBarTitleText": "轉帳"
+					}
+				},
+				{
+					"path": "TransferSecond", //转账
+					"style": {
+						"navigationBarTitleText": "轉帳"
+					}
+				},
+				{
+					"path": "Accept", //接收Vollar
+					"style": {
+						"navigationBarBackgroundColor": "#11C4D1",
+						"navigationBarTitleText": "接收Vollar",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		// 我的
+		{
+			"root": "pages/Mine",
+			"pages": [{
+					"path": "MnemonicWords", //備份助記詞
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "PromptMnemonicWord", //備份助記詞
+					"style": {
+						"navigationBarTitleText": "CryptoWallet"
+					}
+				},
+				{
+					"path": "WalletName", //管理钱包
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "AboutUs", //关于我们
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "WebSite", //官方网站
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "NoticeList", //公告列表
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "NoticeView", //公告详情
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "Locales", //公告详情
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "User", //公告详情
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				}, {
+					"path": "InviteFriends", //邀请好友
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "CryptoWallet",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#11C4D1",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "49px",
+		"fontSize": "13px",
+		"iconWidth": "30px",
+		"spacing": "3px",
+		"iconfontSrc": "static/icon/iconfont.ttf", // app tabbar 字体.ttf文件路径 app 3.4.4+
+		"list": [{
+			"pagePath": "pages/TabBar/Assets",
+			// "iconPath": "static/component.png",
+			// "selectedIconPath": "static/componentHL.png",
+			"text": "資產",
+			"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+				"text": "\ue66b",
+				"selectedText": "\ue66b",
+				"fontSize": "24px",
+				"color": "#999999",
+				"selectedColor": "#11C4D1"
+			}
+		}, {
+			"pagePath": "pages/TabBar/CrossChain",
+			// "iconPath": "static/api.png",
+			// "selectedIconPath": "static/apiHL.png",
+			"text": "跨鏈",
+			"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+				"text": "\ue600",
+				"selectedText": "\ue600",
+				"fontSize": "24px",
+				"color": "#999999",
+				"selectedColor": "#11C4D1"
+			}
+		}, {
+			"pagePath": "pages/TabBar/Find",
+			// "iconPath": "static/api.png",
+			// "selectedIconPath": "static/apiHL.png",
+			"text": "發現",
+			"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+				"text": "\ue8c4",
+				"selectedText": "\ue8c4",
+				"fontSize": "24px",
+				"color": "#999999",
+				"selectedColor": "#11C4D1"
+			}
+		}, {
+			"pagePath": "pages/TabBar/My",
+			// "iconPath": "static/api.png",
+			// "selectedIconPath": "static/apiHL.png",
+			"text": "我的",
+			"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+				"text": "\ue633",
+				"selectedText": "\ue633",
+				"fontSize": "24px",
+				"color": "#999999",
+				"selectedColor": "#11C4D1"
+			}
+		}]
+	}
+}
